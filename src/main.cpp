@@ -8,7 +8,7 @@ int main() {
 	std::cin >> base_number;
 	
 	for (int i = 1; i <= base_number; i++) {
-		if (i > base_number / 2) {
+		if (i > base_number / 2) { // This is here to skip unnecessary iterations since past the halfway point, there's no factors to be found. 
 			std::cout << base_number;
 			break;
 		} 
